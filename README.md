@@ -2,6 +2,7 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/mameen7/goping.svg)](https://pkg.go.dev/github.com/mameen7/goping)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mameen7/goping)](https://goreportcard.com/report/github.com/mameen7/goping)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 A fast and lightweight ping utility in Go that supports **ICMP ping** and gracefully **falls back to TCP ping** when ICMP is not permitted.
 
@@ -27,6 +28,12 @@ Use it as:
 ```bash
 go install github.com/mameen7/goping/cmd/goping@latest
 ```
+
+You might need to add Go bin directory to your path
+``` bash
+export PATH=$PATH:$(go env GOPATH)/bin
+```
+
 
 ### Library
 ```bash
